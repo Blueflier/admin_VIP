@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "VIP Email Notifier",
+    "version": "1.0",
+    "description": "Get notified when emails from VIPs arrive",
+    "permissions": [
+      "storage",
+      "notifications",
+      "tabs",
+      "activeTab",
+      "scripting"
+    ],
+    "host_permissions": [
+      "*://mail.google.com/*"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://mail.google.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
