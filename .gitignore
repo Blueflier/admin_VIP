@@ -1,5 +1,5 @@
 # Firebase configuration (contains sensitive keys)
-firebase-config.js
+
 
 # Environment files
 .env
