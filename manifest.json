@@ -11,7 +11,9 @@
       "scripting"
     ],
     "host_permissions": [
-      "*://mail.google.com/*"
+      "*://mail.google.com/*",
+      "*://www.gstatic.com/*",
+      "*://firestore.googleapis.com/*"
     ],
     "action": {
       "default_popup": "popup.html"
